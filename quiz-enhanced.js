@@ -134,17 +134,17 @@ function submitAnswer() {
     
     const question = currentQuestions[currentQuestionIndex];
     
-    // Handle both index-based and letter-based answers
-    let correct = false;
+    // Determine the correct answer index
+    let correctIndex;
     if (typeof question.correct === 'number') {
         // If correct answer is already an index
-        correct = selectedAnswer === question.correct;
+        correctIndex = question.correct;
     } else if (typeof question.correct === 'string') {
         // If correct answer is a letter (A, B, C, D)
-        const correctIndex = question.correct.charCodeAt(0) - 'A'.charCodeAt(0);
-        correct = selectedAnswer === correctIndex;
+        correctIndex = question.correct.charCodeAt(0) - 'A'.charCodeAt(0);
     }
     
+    const correct = selectedAnswer === correctIndex;
     hasAnsweredCurrent = true;
     
     // Record in progress tracker
@@ -158,12 +158,15 @@ function submitAnswer() {
     const feedbackEl = document.getElementById('feedback');
     const feedbackText = document.getElementById('feedbackText');
     
+    // Get the answers array (could be 'answers' or 'options')
+    const answersArray = question.answers || question.options || [];
+    
     if (correct) {
         feedbackEl.className = 'alert alert-success';
         feedbackText.textContent = '✅ Correct! ' + (question.explanation || '');
     } else {
         feedbackEl.className = 'alert alert-danger';
-        const correctAnswer = question.answers[question.correct];
+        const correctAnswer = answersArray[correctIndex];
         feedbackText.textContent = `❌ Incorrect. The correct answer is: ${correctAnswer}. ${question.explanation || ''}`;
         
         // Show study recommendation if this is second failure
@@ -179,7 +182,7 @@ function submitAnswer() {
     const buttons = document.querySelectorAll('.answer-btn');
     buttons.forEach((btn, idx) => {
         btn.disabled = true;
-        if (idx === question.correct) {
+        if (idx === correctIndex) {
             btn.classList.remove('btn-outline-primary', 'btn-primary');
             btn.classList.add('btn-success');
         } else if (idx === selectedAnswer && !correct) {
