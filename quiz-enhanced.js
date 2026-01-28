@@ -86,7 +86,8 @@ function displayQuestion() {
     const answersContainer = document.getElementById('answersContainer');
     answersContainer.innerHTML = '';
     
-    question.answers.forEach((answer, index) => {
+    const answers = question.answers || question.options || [];
+    answers.forEach((answer, index) => {
         const button = document.createElement('button');
         button.className = 'btn btn-outline-primary btn-lg w-100 mb-2 answer-btn';
         button.textContent = answer;
@@ -132,7 +133,17 @@ function submitAnswer() {
     if (selectedAnswer === null || hasAnsweredCurrent) return;
     
     const question = currentQuestions[currentQuestionIndex];
-    const correct = selectedAnswer === question.correct;
+    
+    // Handle both index-based and letter-based answers
+    let correct = false;
+    if (typeof question.correct === 'number') {
+        // If correct answer is already an index
+        correct = selectedAnswer === question.correct;
+    } else if (typeof question.correct === 'string') {
+        // If correct answer is a letter (A, B, C, D)
+        const correctIndex = question.correct.charCodeAt(0) - 'A'.charCodeAt(0);
+        correct = selectedAnswer === correctIndex;
+    }
     
     hasAnsweredCurrent = true;
     
