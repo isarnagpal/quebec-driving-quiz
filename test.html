@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Debug Test</title>
+</head>
+<body>
+    <h1>Testing Quiz Components</h1>
+    <div id="test"></div>
+    
+    <script src="questions.js"></script>
+    <script>
+        document.getElementById('test').innerHTML = `
+            <h2>Questions Loaded: ${questions ? questions.length : 'ERROR - questions not loaded'}</h2>
+            ${questions && questions[0] ? `
+                <h3>First Question:</h3>
+                <p><strong>Question:</strong> ${questions[0].question}</p>
+                <p><strong>Has image URL:</strong> ${questions[0].image ? 'YES' : 'NO'}</p>
+                <p><strong>Image URL:</strong> ${questions[0].image || 'None'}</p>
+                <p><strong>Has imageDesc:</strong> ${questions[0].imageDesc ? 'YES' : 'NO'}</p>
+                <p><strong>Image Desc:</strong> ${questions[0].imageDesc || 'None'}</p>
+                ${questions[0].image ? `<img src="${questions[0].image}" style="max-width: 300px; border: 2px solid blue;">` : ''}
+            ` : '<p>ERROR: First question not found</p>'}
+        `;
+    </script>
+</body>
+</html>
