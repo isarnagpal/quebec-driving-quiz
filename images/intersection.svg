@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Intersection Warning -->
+  <defs>
+    <style>
+      .warning-diamond { fill: #FFC20E; stroke: black; stroke-width: 3; }
+      .warning-symbol { fill: none; stroke: black; stroke-width: 8; stroke-linecap: round; }
+    </style>
+  </defs>
+  
+  <!-- Yellow diamond -->
+  <rect class="warning-diamond" x="20" y="20" width="160" height="160" rx="5" transform="rotate(45 100 100)"/>
+  
+  <!-- Cross symbol (+ for intersection) -->
+  <line class="warning-symbol" x1="100" y1="60" x2="100" y2="140"/>
+  <line class="warning-symbol" x1="60" y1="100" x2="140" y2="100"/>
+</svg>

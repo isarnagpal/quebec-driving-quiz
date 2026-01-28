@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- No Parking Sign -->
+  <defs>
+    <style>
+      .no-parking-circle { fill: #0055A5; stroke: #ED1C24; stroke-width: 8; }
+      .no-parking-p { fill: white; font-family: Arial, sans-serif; font-weight: bold; font-size: 100px; }
+      .no-parking-slash { fill: none; stroke: #ED1C24; stroke-width: 12; }
+    </style>
+  </defs>
+  
+  <!-- Blue circle with red border -->
+  <circle class="no-parking-circle" cx="100" cy="100" r="90"/>
+  
+  <!-- White P -->
+  <text class="no-parking-p" x="100" y="140" text-anchor="middle">P</text>
+  
+  <!-- Red diagonal slash -->
+  <line class="no-parking-slash" x1="35" y1="35" x2="165" y2="165"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- No Entry / Do Not Enter Sign -->
+  <defs>
+    <style>
+      .no-entry-circle { fill: #ED1C24; stroke: white; stroke-width: 4; }
+      .no-entry-bar { fill: white; }
+    </style>
+  </defs>
+  
+  <!-- Red circle -->
+  <circle class="no-entry-circle" cx="100" cy="100" r="90"/>
+  
+  <!-- White horizontal bar -->
+  <rect class="no-entry-bar" x="20" y="85" width="160" height="30"/>
+</svg>

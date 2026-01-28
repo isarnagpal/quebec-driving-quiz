@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 200" width="150" height="200">
+  <!-- Speed Limit 100 km/h -->
+  <defs>
+    <style>
+      .speed-bg { fill: white; stroke: black; stroke-width: 2; }
+      .speed-number { fill: black; font-family: Arial, sans-serif; font-weight: bold; font-size: 80px; }
+      .speed-unit { fill: black; font-family: Arial, sans-serif; font-size: 20px; }
+    </style>
+  </defs>
+  
+  <!-- White rectangular background -->
+  <rect class="speed-bg" x="5" y="5" width="140" height="190" rx="5"/>
+  
+  <!-- 100 -->
+  <text class="speed-number" x="75" y="120" text-anchor="middle">100</text>
+  
+  <!-- km/h (optional) -->
+  <text class="speed-unit" x="75" y="160" text-anchor="middle">km/h</text>
+</svg>

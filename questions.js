@@ -13,7 +13,7 @@ const questions = [
         correct: "B",
         explanation: "An octagonal red sign is a STOP sign. You must come to a complete stop at the stop line, crosswalk, or before entering the intersection.",
         imageDesc: "🛑 Red octagonal (8-sided) sign with white letters 'STOP'",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/MUTCD_R1-1.svg/400px-MUTCD_R1-1.svg.png"
+        image: "images/stop.svg"
     },
     {
         id: 2,
@@ -28,7 +28,7 @@ const questions = [
         correct: "B",
         explanation: "An inverted triangle is a YIELD sign. You must slow down and give the right of way to other vehicles and pedestrians.",
         imageDesc: "⚠️ Red and white inverted triangle (pointing down) with text 'YIELD' or 'CÉDEZ'",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/MUTCD_R1-2.svg/400px-MUTCD_R1-2.svg.png"
+        image: "images/yield.svg"
     },
     {
         id: 3,
@@ -43,7 +43,7 @@ const questions = [
         correct: "B",
         explanation: "White rectangular signs with numbers indicate speed limits in km/h. This sign means the maximum speed is 100 km/h.",
         imageDesc: "📊 White rectangular sign with large black number '100'",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Quebec_road_sign_P-100-2.svg/300px-Quebec_road_sign_P-100-2.svg.png"
+        image: "images/speed-100.svg"
     },
     {
         id: 4,
@@ -57,7 +57,7 @@ const questions = [
         ],
         correct: "B",
         explanation: "This indicates a 30 km/h speed limit in the school zone when children are present or during posted hours.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/School_speed_limit_sign.svg/300px-School_speed_limit_sign.svg.png"
+        image: "images/school-30.svg"
     },
     {
         id: 5,
@@ -71,7 +71,7 @@ const questions = [
         ],
         correct: "B",
         explanation: "A red circle with a slash through 'P' means no parking is allowed in this area.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/MUTCD_R8-3a.svg/300px-MUTCD_R8-3a.svg.png"
+        image: "images/no-parking.svg"
     },
     {
         id: 6,
@@ -85,7 +85,7 @@ const questions = [
         ],
         correct: "B",
         explanation: "This is a 'No Entry' or 'Do Not Enter' sign. You cannot enter this road or lane.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/MUTCD_R5-1.svg/300px-MUTCD_R5-1.svg.png"
+        image: "images/no-entry.svg"
     },
     {
         id: 7,
@@ -99,7 +99,7 @@ const questions = [
         ],
         correct: "B",
         explanation: "One Way signs indicate the street allows traffic in only one direction (the direction of the arrow).",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/MUTCD_R6-1.svg/200px-MUTCD_R6-1.svg.png"
+        image: "images/one-way.svg"
     },
     {
         id: 8,
@@ -113,7 +113,7 @@ const questions = [
         ],
         correct: "B",
         explanation: "A cross symbol on a yellow diamond warns of an intersection or crossroad ahead. Be prepared to yield or stop.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/MUTCD_W2-1.svg/300px-MUTCD_W2-1.svg.png"
+        image: "images/intersection.svg"
     },
     {
         id: 9,
@@ -127,7 +127,7 @@ const questions = [
         ],
         correct: "B",
         explanation: "This warns of a sharp curve or turn ahead. Reduce speed before entering the curve.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/MUTCD_W1-2.svg/300px-MUTCD_W1-2.svg.png"
+        image: "images/curve-right.svg"
     },
     {
         id: 10,
@@ -141,7 +141,7 @@ const questions = [
         ],
         correct: "C",
         explanation: "Animal crossing signs warn that animals frequently cross in this area. Be alert and prepared to stop.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/MUTCD_W11-3.svg/300px-MUTCD_W11-3.svg.png"
+        image: "images/animal-crossing.svg"
     },
     {
         id: 11,

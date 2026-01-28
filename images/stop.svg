@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- STOP Sign - Octagonal Red Sign -->
+  <defs>
+    <style>
+      .stop-sign { fill: #ED1C24; }
+      .stop-text { fill: white; font-family: Arial, sans-serif; font-weight: bold; font-size: 60px; }
+      .stop-border { fill: white; }
+    </style>
+  </defs>
+  
+  <!-- White border -->
+  <polygon class="stop-border" points="100,10 150,30 180,70 180,130 150,170 100,190 50,170 20,130 20,70 50,30"/>
+  
+  <!-- Red octagon -->
+  <polygon class="stop-sign" points="100,15 145,33 175,73 175,127 145,167 100,185 55,167 25,127 25,73 55,33"/>
+  
+  <!-- STOP text -->
+  <text class="stop-text" x="100" y="125" text-anchor="middle">STOP</text>
+</svg>

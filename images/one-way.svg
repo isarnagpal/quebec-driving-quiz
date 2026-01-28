@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="200" height="100">
+  <!-- One Way Sign -->
+  <defs>
+    <style>
+      .oneway-bg { fill: black; }
+      .oneway-text { fill: white; font-family: Arial, sans-serif; font-weight: bold; font-size: 28px; }
+      .oneway-arrow { fill: white; }
+    </style>
+  </defs>
+  
+  <!-- Black background -->
+  <rect class="oneway-bg" x="0" y="0" width="200" height="100" rx="5"/>
+  
+  <!-- ONE WAY text -->
+  <text class="oneway-text" x="100" y="40" text-anchor="middle">ONE WAY</text>
+  <text class="oneway-text" x="100" y="70" text-anchor="middle" font-size="20">SENS UNIQUE</text>
+  
+  <!-- Arrow pointing right -->
+  <polygon class="oneway-arrow" points="160,20 185,50 160,80 160,65 15,65 15,35 160,35"/>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 200" width="150" height="200">
+  <!-- School Zone 30 km/h -->
+  <defs>
+    <style>
+      .school-bg { fill: white; stroke: black; stroke-width: 2; }
+      .school-number { fill: black; font-family: Arial, sans-serif; font-weight: bold; font-size: 70px; }
+      .school-icon { fill: black; }
+    </style>
+  </defs>
+  
+  <!-- White rectangular background -->
+  <rect class="school-bg" x="5" y="5" width="140" height="190" rx="5"/>
+  
+  <!-- School children icon (simplified) -->
+  <g class="school-icon">
+    <!-- Child figure 1 -->
+    <circle cx="50" cy="45" r="8"/>
+    <line x1="50" y1="53" x2="50" y2="75" stroke="black" stroke-width="3"/>
+    <line x1="50" y1="60" x2="40" y2="70" stroke="black" stroke-width="3"/>
+    <line x1="50" y1="60" x2="60" y2="70" stroke="black" stroke-width="3"/>
+    <line x1="50" y1="75" x2="42" y2="90" stroke="black" stroke-width="3"/>
+    <line x1="50" y1="75" x2="58" y2="90" stroke="black" stroke-width="3"/>
+    
+    <!-- Child figure 2 -->
+    <circle cx="100" cy="45" r="8"/>
+    <line x1="100" y1="53" x2="100" y2="75" stroke="black" stroke-width="3"/>
+    <line x1="100" y1="60" x2="90" y2="70" stroke="black" stroke-width="3"/>
+    <line x1="100" y1="60" x2="110" y2="70" stroke="black" stroke-width="3"/>
+    <line x1="100" y1="75" x2="92" y2="90" stroke="black" stroke-width="3"/>
+    <line x1="100" y1="75" x2="108" y2="90" stroke="black" stroke-width="3"/>
+  </g>
+  
+  <!-- 30 -->
+  <text class="school-number" x="75" y="160" text-anchor="middle">30</text>
+</svg>

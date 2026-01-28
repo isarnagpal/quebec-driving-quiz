@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- YIELD Sign - Inverted Triangle -->
+  <defs>
+    <style>
+      .yield-border { fill: #ED1C24; }
+      .yield-fill { fill: white; }
+      .yield-text { fill: #ED1C24; font-family: Arial, sans-serif; font-weight: bold; font-size: 32px; }
+    </style>
+  </defs>
+  
+  <!-- Red triangle border -->
+  <polygon class="yield-border" points="100,180 10,20 190,20"/>
+  
+  <!-- White inner triangle -->
+  <polygon class="yield-fill" points="100,170 20,30 180,30"/>
+  
+  <!-- YIELD text -->
+  <text class="yield-text" x="100" y="80" text-anchor="middle">YIELD</text>
+  <text class="yield-text" x="100" y="115" text-anchor="middle" font-size="24">CÉDEZ</text>
+</svg>
