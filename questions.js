@@ -12,6 +12,7 @@ const questions = [
         ],
         correct: "B",
         explanation: "An octagonal red sign is a STOP sign. You must come to a complete stop at the stop line, crosswalk, or before entering the intersection.",
+        imageDesc: "🛑 Red octagonal (8-sided) sign with white letters 'STOP'",
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/MUTCD_R1-1.svg/400px-MUTCD_R1-1.svg.png"
     },
     {
@@ -26,6 +27,7 @@ const questions = [
         ],
         correct: "B",
         explanation: "An inverted triangle is a YIELD sign. You must slow down and give the right of way to other vehicles and pedestrians.",
+        imageDesc: "⚠️ Red and white inverted triangle (pointing down) with text 'YIELD' or 'CÉDEZ'",
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/MUTCD_R1-2.svg/400px-MUTCD_R1-2.svg.png"
     },
     {
@@ -40,6 +42,7 @@ const questions = [
         ],
         correct: "B",
         explanation: "White rectangular signs with numbers indicate speed limits in km/h. This sign means the maximum speed is 100 km/h.",
+        imageDesc: "📊 White rectangular sign with large black number '100'",
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Quebec_road_sign_P-100-2.svg/300px-Quebec_road_sign_P-100-2.svg.png"
     },
     {

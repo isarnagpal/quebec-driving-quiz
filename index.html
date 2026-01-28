@@ -286,7 +286,13 @@
             
             <div class="question-text" id="questionText"></div>
             
-            <img id="questionImage" class="question-image" style="display: none;">
+            <div id="imageContainer" style="display: none;">
+            <div style="background: #f3f4f6; border: 3px solid #667eea; border-radius: 10px; padding: 20px; margin: 20px 0; text-align: center;">
+                <div style="font-size: 18px; color: #667eea; font-weight: 600; margin-bottom: 10px;">📷 Visual Reference:</div>
+                <img id="questionImage" style="max-width: 100%; border-radius: 8px;" onerror="this.parentElement.parentElement.style.display='none'">
+                <div id="imageDescription" style="margin-top: 10px; font-size: 14px; color: #666;"></div>
+            </div>
+        </div>
             
             <div class="options" id="optionsContainer"></div>
             

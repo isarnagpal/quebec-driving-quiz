@@ -54,12 +54,28 @@ function displayQuestion() {
     document.getElementById('dailyProgress').textContent = `Question ${currentQuestionIndex + 1}`;
     
     // Handle image
+    const imgContainer = document.getElementById('imageContainer');
     const imgElement = document.getElementById('questionImage');
-    if (question.image) {
-        imgElement.src = question.image;
-        imgElement.style.display = 'block';
+    const imgDesc = document.getElementById('imageDescription');
+    
+    if (question.image || question.imageDesc) {
+        if (question.image) {
+            imgElement.src = question.image;
+            imgElement.style.display = 'block';
+        } else {
+            imgElement.style.display = 'none';
+        }
+        
+        if (question.imageDesc) {
+            imgDesc.textContent = question.imageDesc;
+            imgDesc.style.display = 'block';
+        } else {
+            imgDesc.style.display = 'none';
+        }
+        
+        imgContainer.style.display = 'block';
     } else {
-        imgElement.style.display = 'none';
+        imgContainer.style.display = 'none';
     }
     
     // Display options
